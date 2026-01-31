@@ -182,7 +182,7 @@ export function CreateEventModal({
             <textarea
               id="description"
               name="description"
-              value={formData.description}
+              value={formData.description || ""}
               onChange={handleChange}
               rows={3}
               className="w-full px-3 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary resize-none"
@@ -202,7 +202,7 @@ export function CreateEventModal({
               type="text"
               id="venue"
               name="venue"
-              value={formData.venue}
+              value={formData.venue || ""}
               onChange={handleChange}
               className="w-full px-3 py-2 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
               placeholder="Event venue (optional)"
